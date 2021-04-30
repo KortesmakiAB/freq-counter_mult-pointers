@@ -1,0 +1,1 @@
+what is the BigO of my separate positives? O(n)?
