@@ -1,1 +1,2 @@
-what is the BigO of my separate positives? O(n)?
+what is the BigO of my separate positives? 
+    O(n), I think, but maybe O(n + m), although i'm not exactly sure.

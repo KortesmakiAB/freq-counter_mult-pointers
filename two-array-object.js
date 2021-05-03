@@ -4,17 +4,12 @@
 // If there are not enough values, the rest of keys should have a value of null. 
 // If there not enough keys, just ignore the rest of values.
 
-
 function twoArrayObject(keysArr, valsArr) {
     const obj = {}
 
-    let idx = 0;
-    for (let key of keysArr) {
-        if (idx <= valsArr.length - 1){
-            obj[key] = valsArr[idx];
-            idx++;
-        }
-        else obj[key] = null;
+    for (let idx = 0; idx < keysArr.length; idx++) {
+        if (valsArr[idx]) obj[keysArr[idx]] = valsArr[idx];
+        else obj[keysArr[idx]] = null;
     }
 
     return obj;
